@@ -44,69 +44,72 @@ namespace Rock_Paper_Scissors_Demo1
 				{
 					Console.WriteLine("The Computer Wins! Next Round");
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					cpuWins++;
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					cpuWins++;
 				}
 				else if (convertedNumber == 1 && computerGuess == 3)
 				{
 					Console.WriteLine("You Win! Next Round");
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					userWins++;
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					userWins++;
 				}
 				else if (convertedNumber == 2 && computerGuess == 1)
 				{
 					Console.WriteLine("You Win! Next Round");
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					userWins++;
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					userWins++;
 				}
 				else if (convertedNumber == 2 && computerGuess == 3)
 				{
 					Console.WriteLine("The Computer Wins! Next Round");
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					cpuWins++;
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					cpuWins++;
 				}
 				else if (convertedNumber == 3 && computerGuess == 1)
 				{
 					Console.WriteLine("The Computer Wins! Next Round");
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					cpuWins++;
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					cpuWins++;
 				}
 				else if (convertedNumber == 3 && computerGuess == 2)
 				{
 					Console.WriteLine("You Win! Next Round");
+					userWins++;
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					userWins++;
 				}
 				else if (convertedNumber == computerGuess)
 				{
 					Console.WriteLine("The Game is a Tie.");
+					ties++; 
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
-					ties++;
 				}
 			} while (userWins < 2 || computerGuess < 2);
 
 
 			// 4. print out the winner, and how many games were won by each (and ties)
-				if (userWins == 2)
+
+				if (userWins == 2 && cpuWins < 2)
 				{
-					Console.WriteLine($"Congratulations! You Win. The number of ties between you and the computer was {ties}. Good game");
+					Console.WriteLine("You won again!");
+					Console.WriteLine($"Congratulations! You Win. The number of ties between you and the computer was {ties}. Good game :)");
 				} 
 				else if (cpuWins == 2) 
 				{
-					Console.WriteLine($"The Computer got the best of you this time! The amount of ties etween you and the computer was {ties}.");
+					Console.WriteLine("Uh-Oh! It looks like the computer got the best of you!");
+					Console.WriteLine($"The Computer got the best of you this time! The amount of ties between you and the computer was {ties}. :(");
 				}
 
 			// 5. and exit the program.
