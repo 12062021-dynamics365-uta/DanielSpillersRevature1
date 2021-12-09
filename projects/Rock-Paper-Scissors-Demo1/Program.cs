@@ -35,9 +35,6 @@ namespace Rock_Paper_Scissors_Demo1
 			Random randNum = new Random();
 			computerGuess = randNum.Next(1, 4);
 
-			//Console.WriteLine(randNum.Next(1, 4));// inclusive of the first (lower) value and exclusive of hte second(upper) value. 
-
-
 			do
 			{
 				if (convertedNumber == 1 && computerGuess == 2)
@@ -83,23 +80,20 @@ namespace Rock_Paper_Scissors_Demo1
 				else if (convertedNumber == 3 && computerGuess == 2)
 				{
 					Console.WriteLine("You Win! Next Round");
-					userWins++;
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					userWins++;
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
 				}
 				else if (convertedNumber == computerGuess)
 				{
 					Console.WriteLine("The Game is a Tie.");
-					ties++; 
 					Console.WriteLine("Please enter enter 1 for ROCK, 2 for PAPER, 3 for SCISSORS");
+					ties++; 
 					string userInput = Console.ReadLine();
 					computerGuess = randNum.Next(1, 4);
 				}
 			} while (userWins < 2 || computerGuess < 2);
-
-
-			// 4. print out the winner, and how many games were won by each (and ties)
 
 				if (userWins == 2 && cpuWins < 2)
 				{
@@ -111,10 +105,6 @@ namespace Rock_Paper_Scissors_Demo1
 					Console.WriteLine("Uh-Oh! It looks like the computer got the best of you!");
 					Console.WriteLine($"The Computer got the best of you this time! The amount of ties between you and the computer was {ties}. :(");
 				}
-
-			// 5. and exit the program.
-
-
 		}
 	}
 }
