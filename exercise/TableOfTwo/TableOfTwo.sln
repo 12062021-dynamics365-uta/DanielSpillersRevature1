@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableOfTwo", "TableOfTwo.csproj", "{1088044E-D4B1-4AB5-ACAD-D6DCF8D11A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two-Dimensional Array", "..\Two-Dimensional Array\Two-Dimensional Array.csproj", "{F7554347-A27D-4AAF-8BC0-D25046A55D99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1088044E-D4B1-4AB5-ACAD-D6DCF8D11A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1088044E-D4B1-4AB5-ACAD-D6DCF8D11A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1088044E-D4B1-4AB5-ACAD-D6DCF8D11A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1088044E-D4B1-4AB5-ACAD-D6DCF8D11A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7554347-A27D-4AAF-8BC0-D25046A55D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7554347-A27D-4AAF-8BC0-D25046A55D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7554347-A27D-4AAF-8BC0-D25046A55D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7554347-A27D-4AAF-8BC0-D25046A55D99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE090505-2C3A-4ACA-95CF-6FEAB16B2000}
+	EndGlobalSection
+EndGlobal
