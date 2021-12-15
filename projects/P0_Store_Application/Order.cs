@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P0_Store_Application
 {
-    public enum Products
+    class Order
     {
 
     }

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextReader", "TextReader.csproj", "{3178DCE5-1BDE-4616-B9FF-9506CA0AE364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryReader1", "..\BinaryReader1\BinaryReader1.csproj", "{F059F408-62DA-4280-A729-4E72434D082A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "..\Serialization\Serialization.csproj", "{0EC8A8D9-2E56-4F3E-8C8A-D991DE8B51EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_Serialization", "..\JSON_Serialization\JSON_Serialization.csproj", "{C37956E9-908E-409F-A63C-1916E72073B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3178DCE5-1BDE-4616-B9FF-9506CA0AE364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3178DCE5-1BDE-4616-B9FF-9506CA0AE364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3178DCE5-1BDE-4616-B9FF-9506CA0AE364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3178DCE5-1BDE-4616-B9FF-9506CA0AE364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F059F408-62DA-4280-A729-4E72434D082A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F059F408-62DA-4280-A729-4E72434D082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F059F408-62DA-4280-A729-4E72434D082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F059F408-62DA-4280-A729-4E72434D082A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC8A8D9-2E56-4F3E-8C8A-D991DE8B51EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC8A8D9-2E56-4F3E-8C8A-D991DE8B51EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC8A8D9-2E56-4F3E-8C8A-D991DE8B51EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC8A8D9-2E56-4F3E-8C8A-D991DE8B51EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37956E9-908E-409F-A63C-1916E72073B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37956E9-908E-409F-A63C-1916E72073B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37956E9-908E-409F-A63C-1916E72073B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37956E9-908E-409F-A63C-1916E72073B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6737D3D-FF94-4255-A3A3-AEC5A52DBE99}
+	EndGlobalSection
+EndGlobal
