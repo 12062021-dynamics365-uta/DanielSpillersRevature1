@@ -5,6 +5,7 @@
         NYC = 1,
         Chicago = 2,
         LA = 3,
-        Tokyo = 4
+        Tokyo = 4,
+        Invalid = 5
     }
 }

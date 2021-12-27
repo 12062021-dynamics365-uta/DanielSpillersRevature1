@@ -102,11 +102,53 @@ namespace P0_Store_Application
             foreach (var product in products)
             {
                 Console.WriteLine
-                    (
-                    $"Product {product.stockUnit}\n " +
-                    $"{product.productName}\n " +
-                    $"${product.price}\n"
-                    );
+                    ($"{product.stockUnit}: {product.productName} - ${product.price}");
+            }
+        }
+
+        public void ListOrder(int validInventoryItem)
+        {
+            List<ProductList> orderList = new List<ProductList>();
+
+            if(validInventoryItem == 1)
+            {
+                orderList.Add(product1);
+            }
+            if (validInventoryItem == 2)
+            {
+                orderList.Add(product2);
+            }
+            if (validInventoryItem == 3)
+            {
+                orderList.Add(product3);
+            }
+            if (validInventoryItem == 4)
+            {
+                orderList.Add(product4);
+            }
+            if (validInventoryItem == 5)
+            {
+                orderList.Add(product5);
+            }
+            if (validInventoryItem == 6)
+            {
+                orderList.Add(product6);
+            }
+            if (validInventoryItem == 7)
+            {
+                orderList.Add(product7);
+            }
+            if (validInventoryItem == 8)
+            {
+                orderList.Add(product8);
+            }
+            if (validInventoryItem == 9)
+            {
+                orderList.Add(product9);
+            }
+            if (validInventoryItem == 10)
+            {
+                orderList.Add(product10);
             }
         }
 

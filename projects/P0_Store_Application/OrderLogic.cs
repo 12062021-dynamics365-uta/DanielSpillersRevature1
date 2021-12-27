@@ -8,25 +8,24 @@ namespace P0_Store_Application
 {
     public class OrderLogic
     {
-        List<Customer> customers;
-        private Customer currentLoggedInUser;
+       // List<CustomerList> customers = this.customers;
+       // private Customer currentLoggedInUser;
 
         //Login or Register A Shopper
-        internal void Login(string userName, string userPw)
-        {
-            foreach (Customer existing in customers)
-            {
-                if(existing.userName == userName && existing.password == userPw)
-                {
+        //internal void Login(string userName, string userPw)
+       // {
+       //     foreach (var existing in customers)
+       //     {
+       //         if(existing.userName == userName && existing.password == userPw)
+       //         {
 
-                    Console.WriteLine("Welcome back! You are now logged in");
-                    this.currentLoggedInUser = existing;
-                } else
-                {
-                    Console.WriteLine("Would you like to create a new login?");
-                }
-            }
-        }
+       //             Console.WriteLine("Welcome back! You are now logged in");
+       //         } else
+       //         {
+       //             Console.WriteLine("Would you like to create a new login?");
+       //         }
+       //     }
+       // }
 
 
 
@@ -46,13 +45,16 @@ namespace P0_Store_Application
         //verifies if the user wants to add the item to the cart
         //or return to the previous screen
 
+
         //If a product is added to a cart,
         //a list with cart items is created
         //and asks if you are ready to check out
 
+
         //if your order is over $500,
         //the shopper is prompted to adjust their cart size
         //and the cart list appears to select an item to remove
+
 
         //asks if you are ready to check out
 

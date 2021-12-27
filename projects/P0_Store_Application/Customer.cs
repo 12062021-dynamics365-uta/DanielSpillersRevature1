@@ -6,32 +6,45 @@ using System.Threading.Tasks;
 
 namespace P0_Store_Application
 {
-    internal class Customer
+    public class Customer
+    {
+        CustomerList testCustomer;
+
+        public Customer()
+        {
+            testCustomer = new CustomerList()
+            {
+                firstName = "Daniel",
+                lastName = "Spillers",
+                userName = "Dspill88",
+                password = "11231988",
+
+            };
+        }
+
+        public void ListCustomers()
+        {
+            List<CustomerList> customers = new List<CustomerList>();
+
+            customers.Add(testCustomer);
+
+            foreach (var customer in customers)
+            {
+                Console.WriteLine(
+                    $"{customer.firstName} {customer.lastName}\n " +
+                    $"{customer.userName}: {customer.password}\n");
+            }
+        }
+    }
+
+}
+    public class CustomerList
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string userName { get; set; }
         public string password { get; set; }
-        protected string paymentMethod { get; set; }
-
-        public List<string> orderHistory { get; set; }
-
-        public Customer(
-            string firstName, 
-            string lastName, 
-            string userName, 
-            string password, 
-            string paymentMethod
-            )
-
-            {
-                this.firstName = firstName;
-                this.lastName = lastName;
-                this.userName = userName;
-                this.password = password;
-                this.paymentMethod = paymentMethod;
-            }
-
 
     }
-}
+
+

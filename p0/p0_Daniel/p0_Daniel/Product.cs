@@ -4,17 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P0_Store_Application
+namespace p0_Daniel
 {
-    public class Order
+    public class Product
     {
-
-    }
-
-    public class OrderList
-    {
-        public int stockUnit { get; set; }
+        public int productId { get; set; }
         public string productName { get; set; }
+        public string description { get; set; }
         public double price { get; set; }
     }
 }
