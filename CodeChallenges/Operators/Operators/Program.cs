@@ -16,7 +16,7 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Increment(int num)
         {
-            return num++;
+            return ++num;
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Decrement(int num)
         {
-            return num--;
+            return --num;
         }
 
         /// <summary>

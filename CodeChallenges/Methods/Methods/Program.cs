@@ -8,16 +8,17 @@ namespace _4_MethodsChallenge
         {
             string name = GetName();
             GreetFriend(name);
+            Console.WriteLine("Enter a Number");
             double x = GetNumber();
+            Console.WriteLine("Enter a Second Number");
             double y = GetNumber();
-            string typeAction = Console.ReadLine();
-            int action;
-            bool validAction = Int32.TryParse(typeAction, out action);
+            int action = GetAction();
             DoAction(x, y, action);
         }
 
         public static string GetName()
         {
+            Console.WriteLine("Welcome. Enter your name.");
             string name = Console.ReadLine();
             return name;
         }
@@ -38,12 +39,12 @@ namespace _4_MethodsChallenge
 
         public static int GetAction()
         {
-            bool validChoice = false;
             int choice;
             bool keepAsking  = false;
             do
             {
-                Console.WriteLine("enter an integer");
+                bool validChoice = false;
+                Console.WriteLine("enter an action");
                 string choiceMade = Console.ReadLine();
                 validChoice = int.TryParse(choiceMade, out choice);
                     if (validChoice == false)
@@ -51,7 +52,7 @@ namespace _4_MethodsChallenge
                         Console.WriteLine("Try again.");
 
                     }
-                else if(validChoice == true)
+                else if(validChoice && choice >= 1 && choice <=4)
                 {
                     return choice;
                 }
