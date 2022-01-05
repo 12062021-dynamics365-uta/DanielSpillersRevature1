@@ -108,7 +108,9 @@ namespace _6_FlowControl
         /// <param name="temp"></param>
         public static void GetTemperatureTernary(int temp)
         {
-            var result = temp <= 42 ? $"{temp} is too cold!" : temp >= 43 && temp <= 78 ? $"{temp} is an ok temperature" : temp > 78 ? $"{temp} is too hot!" : "no result";
+            var result = temp <= 42 ? $"{temp} is too cold!" :
+                temp >= 43 && temp <= 78 ? $"{temp} is an ok temperature" :
+                temp > 78 ? $"{temp} is too hot!" : "no result";
             Console.WriteLine(result);
         }
 
