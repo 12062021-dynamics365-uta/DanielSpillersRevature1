@@ -42,7 +42,7 @@ namespace p0_Daniel
             int Random() {return _random.Next(6, 1000000);}
             int customerId = Random();
             string query = $"INSERT INTO Customer(CustomerId, FirstName, LastName, UserName, Email, Password) VALUES('{customerId}', '{firstName}', '{lastName}', '{userName}', '{email}', '{password}')";
-            using (SqlCommand cmd = new SqlCommand(query, this.connection))
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
                 SqlDataReader dr = cmd.ExecuteReader();
                 this.mapper.EntityToCustomer(dr);
