@@ -30,7 +30,7 @@ namespace SweetnSaltyAPI
         {
             services.AddScoped<ISweetnSaltyBusinessClass, SweetnSaltyBusinessClass>();
             services.AddScoped<ISweetnSaltyDbAccessClass, SweetnSaltyDbAccessClass>();
-            //services.AddScoped<IMapper, Mapper>();
+            services.AddScoped<IMapper, Mapper>();
 
 
             services.AddControllers();

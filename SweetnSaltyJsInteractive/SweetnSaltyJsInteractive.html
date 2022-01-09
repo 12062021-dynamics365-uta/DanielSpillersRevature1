@@ -35,12 +35,12 @@
       instruction.classList.add("instructions");
       instruction.innerHTML =
         "When you press start, you will be asked to enter two numbers.<br> " +
-        "The first number will be your starting digit.<br> " + 
+        "The first number will be your starting digit.<br> " +
         "The second digit must be higher by at least 200, but no greater than 10,000 more than your first.<br> " +
-        "When you enter both numbers, The page will print all of the numbers between.<br> "+
+        "When you enter both numbers, The page will print all of the numbers between.<br> " +
         "For every number that can be divided equally by 3, it will say Sweet instead<br> " +
         "If the number is divisible by 5, it will say Salty instead.<br>" +
-        "But don't worry! Numbers that can be divided by both will print Sweet 'n Salty! :)<br> "+
+        "But don't worry! Numbers that can be divided by both will print Sweet 'n Salty! :)<br> " +
         "Press Start to Begin!!!";
 
       document.body.appendChild(buttonElement);
@@ -72,8 +72,8 @@
         console.log(lastVal);
         document.body.removeChild(inputElement);
         document.body.removeChild(input2Button);
-        EvaluateStartingNumber(firstVal, lastVal);
-        EvaluateNegativeNumbers(firstVal, lastVal);
+        //EvaluateStartingNumber(firstVal, lastVal);
+        //EvaluateNegativeNumbers(firstVal, lastVal);
         PrintValues(firstVal, lastVal);
       });
 
@@ -85,7 +85,11 @@
         } else if (lastVal - firstVal > 10000) {
           alert("Please enter 2 values that have a range smaller than 10,000.");
           location.reload();
-        } else {
+        } else if (lastVal - firstVal < 0) {
+          alert("The sencond number must be larger. Try again.");
+          location.reload();
+        }
+        {
           return;
         }
       }
@@ -105,7 +109,7 @@
         let sweetNsalty = 0;
         let myArray = new Array();
 
-        for (let i = firstVal; i <= lastVal; i++) {
+        while  (firstVal < lastVal) {
           if (i % 3 == 0 && i % 5 == 0) {
             myArray.push("<span>Sweet -n- Salty </span>");
             sweetNsalty++;
@@ -118,11 +122,11 @@
           } else {
             if (i < 1000) {
               myArray.push(`${i} `);
-            } else if (i >= 1000) {
+            } else {
               myArray.push(`${i.toLocaleString()} `);
             }
-
           }
+          firstVal++;
         }
 
         for (let i = 0; i < myArray.length; i++) {
