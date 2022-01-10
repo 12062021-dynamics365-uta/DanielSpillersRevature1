@@ -30,7 +30,10 @@ namespace SweetnSaltyAPI.Controllers
             {
                 return Created($"http://5001/sweetnsalty/postaflavor/{f.flavorId}", f);
             }
-            else return BadRequest();
+            else
+            {
+                return BadRequest();
+            }
         }
 
         [HttpPost]
@@ -42,7 +45,10 @@ namespace SweetnSaltyAPI.Controllers
             {
                 return Created($"http://5001/sweetnsalty/postaperson/{p.fname}/{p.lname}", p);
             }
-            else return BadRequest();
+            else
+            {
+                return BadRequest();
+            }
 
         }
 
@@ -70,7 +76,10 @@ namespace SweetnSaltyAPI.Controllers
             {
                 return Ok(p);
             }
-            else { return NotFound(); }
+            else 
+            { 
+                return NotFound(); 
+            }
 
         }
 
@@ -83,7 +92,10 @@ namespace SweetnSaltyAPI.Controllers
             {
                 return Ok(f);
             }
-            else { return NotFound(); }
+            else 
+            { 
+                return NotFound(); 
+            }
         }
 
 
