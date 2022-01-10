@@ -91,10 +91,10 @@ namespace SweetnSaltyDbAccess
 
         public async Task<SqlDataReader> GetPersonAndFlavors(int id)
         {
-            //string query = "SELECT Users.UserID, Users.FirstName, Users.LastName, Flavors.FlavorID, FLavors.Flavor FROM Users " +
-            //               "INNER JOIN UserPreferences ON Users.UserID = UserPreferences.UserID " +
-            //               "INNER JOIN Flavors ON Flavors.FlavorID = UserPreferences.FlavorID " +
-            //               "WHERE Users.UserID = @id;";
+            string query = "SELECT Users.UserID, Users.FirstName, Users.LastName, Flavors.FlavorID, FLavors.Flavor FROM Users " +
+                           "JOIN UsersFlavors ON Users.UserID = UsersFlavors.UserID " +
+                           "JOIN Flavors ON Flavors.FlavorID = UsersFlavors.FlavorID " +
+                           "WHERE Users.UserID = @id;";
             try
             {
                 using (SqlCommand cmd = new SqlCommand(query, _con))
